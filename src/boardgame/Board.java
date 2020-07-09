@@ -47,7 +47,7 @@ public class Board {
 	
 	public void placePiece(Piece piece, Position position) {
 		if (this.thereIsApiece(position)) {
-			throw new BoardException("There is alerady a piece on position " + position);
+			throw new BoardException("There is alerady a piece on position  " + position);
 		}
 		this.pieces[position.getRow()][position.getColumn()] = piece;
 		piece.position = position;
